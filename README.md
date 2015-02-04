@@ -2,18 +2,17 @@
 
 Webseclab contains a sample set of web security test cases and a toolkit to construct new ones.  It can be used for testing security scanners, to replicate or reconstruct issues, or to help with investigations or discussions of particular types of web security bugs.
 
-### Install
+### Build
 
-	$ go get github.com/yahoo/webseclab/...
+	$ docker build -t asannou/webseclab .
 
 ### Run
 
 ```
-$GOPATH/bin/webseclab [-http=:8080]
+docker run -p 8080:8080 asannou/webseclab
 ```
-or simply ```webseclab``` if $GOPATH/bin is in your PATH.
 
-Run webseclab -help to view the options.
+Run asannou/webseclab -help to view the options.
 
 ### Webseclab Tests
 
